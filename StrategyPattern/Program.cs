@@ -6,7 +6,10 @@ namespace StrategyPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Context context = new Context(new AlgorithmA());
+            context.Solve(2);
+            context = new Context(new AlgorithmB());
+            context.Solve(3);
         }
     }
 }

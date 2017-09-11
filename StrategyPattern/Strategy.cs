@@ -1,10 +1,9 @@
 ﻿using System;
 namespace StrategyPattern
 {
-    public class Strategy
+    public abstract class Strategy
     {
-        public Strategy()
-        {
-        }
+        public abstract void SolveSometing(int data);
+        protected Strategy() { }
     }
 }

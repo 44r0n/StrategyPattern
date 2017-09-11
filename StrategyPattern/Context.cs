@@ -3,8 +3,16 @@ namespace StrategyPattern
 {
     public class Context
     {
-        public Context()
+        private Strategy strategy;
+        
+        public Context(Strategy strategy)
         {
+            this.strategy = strategy;
+        }
+
+        public void Solve(int data)
+        {
+            strategy.SolveSometing(data);
         }
     }
 }
